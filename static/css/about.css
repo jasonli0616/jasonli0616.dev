@@ -1,0 +1,72 @@
+/* About */
+.about {
+    background: rgba(36, 36, 36, 0.829);
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    height: fit-content;
+}
+
+.about p {
+    margin: auto 10px;
+}
+
+.about a {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+.about .about-badge {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .about-badge img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    max-width: 95%;
+}
+
+.about .about-badge a {
+    vertical-align: middle;
+}
+
+.lang-list {
+    font-size: 20px;
+    margin-top: -30px;
+    line-height: 4vh;
+    cursor: default;
+}
+
+.lang-list img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.lang-list i {
+    padding: 1px;
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        min-width: fit-content;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .lang-list {
+        font-size: 16px;
+        line-height: 3vh;
+    }
+    .lang-list img {
+        width: 20px;
+    }
+}

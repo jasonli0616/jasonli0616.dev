@@ -1,0 +1,61 @@
+.contact-div {
+    padding: 10vh;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-div {
+        padding: 5vh 3vw;
+    }
+}
+
+.contact-div h1 {
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.contact-div form {
+    border-radius: 25px;
+    background-color: rgba(3, 3, 3, 0.17);
+    padding: 30px;
+    padding-right: 60px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.contact-div form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-div form input[type=text], .contact-div form input[type=email], .contact-div form textarea {
+    width: 100%;
+    padding: 7px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+    transition: 0.3s all;
+}
+
+.contact-div form button {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-left: 0;
+}
+
+.contact-div form button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
+}
+
+span.required {
+    color: red;
+}
