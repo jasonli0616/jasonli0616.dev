@@ -89,7 +89,7 @@
         "order": 12
     },
     {
-        "name": "JS",
+        "name": "JavaScript",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/js_icon.png",
         "sub_lang": true,
