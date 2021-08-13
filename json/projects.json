@@ -3,6 +3,7 @@
         "name": "BSCode",
         "description": "BSCode is a lightweight text editor for code. This is only a proof of concept application, and is not designed for practical use due to its bugginess.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/bscode_screenshot.png",
+        "languages": "Python, Tkinter",
         "buttonURL": "https://github.com/jasonli0616/BSCode",
         "buttonWebsiteName": "GitHub",
         "order": 1
@@ -11,6 +12,7 @@
         "name": "PyInstaller GUI",
         "description": "This is a GUI version of PyInstaller. Freeze your Python code into an executable applicataion without having to use the command line.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/pyinstallergui_screenshot.png",
+        "languages": "Python, Tkinter",
         "buttonURL": "https://github.com/jasonli0616/PyInstaller-GUI",
         "buttonWebsiteName": "GitHub",
         "order": 2
@@ -19,6 +21,7 @@
         "name": "AnonPost",
         "description": "AnonPost is a concept social media platform based around anonymity. The user can use any username to sign up, and can create as many accounts as they want to remain anonymous.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/anonpost_screenshot.png",
+        "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL, Node.js, Electron",
         "buttonURL": "https://github.com/jasonli0616/anon-post",
         "buttonWebsiteName": "GitHub",
         "order": 3
@@ -27,6 +30,7 @@
         "name": "math.java",
         "description": "Math.java is a math package in Java with a focus on vectors, trigonometry, and linear equations. It is made by me and 2 other people at my school to learn Java for my school's robotics club.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/mathjava_screenshot.png",
+        "languages": "Java",
         "buttonURL": "https://github.com/Tripleteam88/math.java",
         "buttonWebsiteName": "GitHub",
         "order": 4
@@ -35,6 +39,7 @@
         "name": "Tutor Center",
         "description": "Tutor Center is a website to find freelance tutors and help their business. It is a project made for the Hack The Cloud 2.0 hackathon.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/tutorcenter_screenshot.png",
+        "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL",
         "buttonURL": "https://github.com/jasonli0616/HTC2021-404NotFound",
         "buttonWebsiteName": "GitHub",
         "order": 5

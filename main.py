@@ -24,9 +24,6 @@ def getProjects():
 @app.route('/', methods=['GET', 'POST'])
 def index():
 
-    languages = getLanguages()
-    projects = getProjects()
-
     if request.method == 'POST':
         # Contact
 
@@ -65,12 +62,13 @@ def index():
         except:
             flash('An error occurred. Please try again.')
 
-    return render_template('index.html', languages=languages, projects=projects)
+    return render_template('index.html', languages=getLanguages(), projects=getProjects())
 
 @app.route('/<page>/')
 def shortcut(page):
     # Shortcuts
     if page == 'github': return redirect('https://github.com/jasonli0616')
+    elif page == 'devpost': return redirect('https://devpost.com/jasonli0616')
     elif page == 'about' or page == 'projects' or page == 'contact': return redirect(f'/#{page}')
     return redirect(url_for('index'))
 
