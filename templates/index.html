@@ -125,14 +125,22 @@
                 data-aos-duration="700"
             >
                 <h2>{{ project.name }}</h2>
-                <img src="{{ project.imageURL }}" alt=""
+                <img src="{{ project.imageURL }}" alt="" style="max-height: 300px;"
                     data-aos="fade-down"
                     data-aos-delay="200"
                     data-aos-duration="700"
                 >
                 <p>
                     {{ project.description }}
+                    <br>
+                    <span class="project-language">
+                        {% if project.languages %}
+                        Made with:<br>
+                        {{ project.languages }}
+                        {% endif %}
+                    </span>
                 </p>
+
                 <a href="{{ project.buttonURL }}" target="_blank" class="btn">View on {{ project.buttonWebsiteName }}</a>
             </div>
         {% endfor %}

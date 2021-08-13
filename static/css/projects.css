@@ -42,7 +42,7 @@
 .projects p {
     margin: auto 5px;
     height: fit-content;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .projects p a {
@@ -54,10 +54,14 @@
     text-decoration: underline;
 }
 
+span.project-language {
+    font-size: 14px;
+}
+
 .projects .btn {
     position: absolute;
     bottom: 0;
-    margin: 10px auto;
     left: 0;
     right: 0;
+    margin: 10px auto;
 }
