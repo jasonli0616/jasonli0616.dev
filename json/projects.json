@@ -51,5 +51,14 @@
         "buttonURL": "https://marketplace.visualstudio.com/items?itemName=jasonli0616.jason-vscode-theme",
         "buttonWebsiteName": "VSCode",
         "order": 6
+    },
+    {
+        "name": "PythonMySequel",
+        "description": "PythonMySequel is an object oriented MySQL connector for Python. It is designed to be easy to use, with Python code instead of SQL.",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/pythonmysequel_screenshot.png",
+        "languages": "Python, SQL",
+        "buttonURL": "https://github.com/jasonli0616/PythonMySequel",
+        "buttonWebsiteName": "GitHub",
+        "order": 7
     }
 ]
