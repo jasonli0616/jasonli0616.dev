@@ -64,6 +64,10 @@ def index():
 
     return render_template('index.html', languages=getLanguages(), projects=getProjects())
 
+@app.route('/github/<repo>')
+def github(repo):
+    return redirect(f'https://github.com/jasonli0616/{repo}')
+
 @app.route('/<page>/')
 def shortcut(page):
     # Shortcuts
