@@ -6,21 +6,24 @@ import os
 app = Flask(__name__)
 
 def getLanguages():
+    '''Get languages as list'''
     # Get JSON from GitHub
     response = requests.get('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/languages.json')
     # Sort by 'order' key
     return sorted(list(response.json()), key=lambda k: k['order'])
 
 def getProjects():
+    '''Get projects as list'''
     # Get JSON from GitHub
     response = requests.get('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
     # Sort by 'order' key
     return sorted(list(response.json()), key=lambda k: k['order'], reverse=True)
 
-# Routes
-@app.route('/index.html/', methods=['GET', 'POST'])
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/index.html/')
+@app.route('/')
 def index():
+    '''Homepage'''
+    return render_template('index.html', languages=getLanguages(), projects=getProjects())
 
 @app.route('/send-email/', methods=['POST'])
 def send_email():
@@ -68,11 +71,12 @@ def send_email():
 
 @app.route('/github/<repo>')
 def github(repo):
+    '''Redirect to GitHub repo'''
     return redirect(f'https://github.com/jasonli0616/{repo}')
 
 @app.route('/<page>/')
 def shortcut(page):
-    # Shortcuts
+    '''Shortcuts'''
     if page == 'github': return redirect('https://github.com/jasonli0616')
     elif page == 'devpost': return redirect('https://devpost.com/jasonli0616')
     elif page == 'about' or page == 'projects' or page == 'contact': return redirect(f'/#{page}')
