@@ -148,7 +148,7 @@
         data-aos="zoom-in"
         data-aos-duration="1000"
     >
-        <form action="" method="POST">
+        <form id="contact-form" method="POST">
             <h1>Contact</h1>
 
             <label for="name">Name <span class="required">*</span></label>
@@ -163,12 +163,13 @@
             <label for="contact-message">Message <span class="required">*</span></label>
             <textarea name="message" id="contact-message" rows="10" required></textarea>
 
-            <button type="submit">Send email</button>
+            <button type="submit" id="contact-button">Send email</button>
         </form>
     </div>
 
 
 
+    <script src="{{ url_for('static', filename='js/send-email.js') }}"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
