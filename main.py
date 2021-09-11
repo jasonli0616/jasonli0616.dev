@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 import smtplib
 import requests
+import re
 import os
 
 app = Flask(__name__)
@@ -50,6 +51,9 @@ def send_email():
         sendEmail = False
     elif email == '':
         return_json['msg'] = 'Please enter your email address.'
+        sendEmail = False
+    elif not re.fullmatch(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email):
+        return_json['msg'] = 'Please enter a valid email address.'
         sendEmail = False
     elif message == '':
         return_json['msg'] = 'Please enter your message.'
