@@ -69,5 +69,14 @@
         "buttonURL": "https://github.com/jasonli0616/cov-ontario",
         "buttonWebsiteName": "GitHub",
         "order": 8
+    },
+    {
+        "name": "Life Saver",
+        "description": "Life Saver is a website that allows quick access to treatments for a variety of injuries and probable diagnoses based on symptoms.",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/lifesaver_screenshot.png",
+        "languages": "Node.js, Express, JavaScript, EJS, Bootstrap",
+        "buttonURL": "https://github.com/jasonli0616/OHacksIO-2021",
+        "buttonWebsiteName": "GitHub",
+        "order": 9
     }
 ]

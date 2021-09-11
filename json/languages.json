@@ -38,30 +38,38 @@
         "order": 5
     },
     {
+        "name": "Express.js",
+        "stars": 3,
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/expressjs_icon.png",
+        "sub_lang": true,
+        "animation_delay": 550,
+        "order": 5
+    },
+    {
         "name": "SQL",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/sql_icon.png",
-        "animation_delay": 550,
+        "animation_delay": 600,
         "order": 6
     },
     {
         "name": "MongoDB",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/mongodb_icon.png",
-        "animation_delay": 600,
+        "animation_delay": 650,
         "order": 7
     },
     {
         "name": "Java",
         "stars": 2,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/java_icon.png",
-        "animation_delay": 650,
+        "animation_delay": 700,
         "order": 8
     },
     {
         "name": "Web technologies",
         "no_stars": true,
-        "animation_delay": 700,
+        "animation_delay": 750,
         "order": 9
     },
     {
@@ -69,7 +77,7 @@
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/html_icon.png",
         "sub_lang": true,
-        "animation_delay": 750,
+        "animation_delay": 800,
         "order": 10
     },
     {
@@ -77,7 +85,7 @@
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/bootstrap_icon.png",
         "sub_lang": true,
-        "animation_delay": 800,
+        "animation_delay": 850,
         "order": 11
     },
     {
@@ -85,7 +93,7 @@
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/css_icon.png",
         "sub_lang": true,
-        "animation_delay": 850,
+        "animation_delay": 900,
         "order": 12
     },
     {
@@ -93,7 +101,7 @@
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/js_icon.png",
         "sub_lang": true,
-        "animation_delay": 900,
+        "animation_delay": 950,
         "order": 13
     }
 ]
