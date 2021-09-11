@@ -10,7 +10,13 @@ def getLanguages():
     # Get JSON from GitHub
     response = requests.get('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/languages.json')
     # Sort by 'order' key
-    return sorted(list(response.json()), key=lambda k: k['order'])
+    languages = sorted(list(response.json()), key=lambda k: k['order'])
+    # Put in animation delay
+    animation_delay = 300
+    for language in languages:
+        language['animation_delay'] = animation_delay
+        animation_delay += 50
+    return languages
 
 def getProjects():
     '''Get projects as list'''

@@ -3,7 +3,6 @@
         "name": "Python 3",
         "stars": 4,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/python_icon.png",
-        "animation_delay": 300,
         "order": 1
     },
     {
@@ -11,7 +10,6 @@
         "stars": 4,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/flask_icon.png",
         "sub_lang": true,
-        "animation_delay": 350,
         "order": 2
     },
     {
@@ -19,14 +17,12 @@
         "stars": 4,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/discord_icon.png",
         "sub_lang": true,
-        "animation_delay": 400,
         "order": 3
     },
     {
         "name": "Node.js",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/nodejs_icon.png",
-        "animation_delay": 450,
         "order": 4
     },
     {
@@ -34,7 +30,6 @@
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/electron_icon.png",
         "sub_lang": true,
-        "animation_delay": 500,
         "order": 5
     },
     {
@@ -42,66 +37,57 @@
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/expressjs_icon.png",
         "sub_lang": true,
-        "animation_delay": 550,
-        "order": 5
+        "order": 6
     },
     {
         "name": "SQL",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/sql_icon.png",
-        "animation_delay": 600,
-        "order": 6
+        "order": 7
     },
     {
         "name": "MongoDB",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/mongodb_icon.png",
-        "animation_delay": 650,
-        "order": 7
+        "order": 8
     },
     {
         "name": "Java",
         "stars": 2,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/java_icon.png",
-        "animation_delay": 700,
-        "order": 8
+        "order": 9
     },
     {
         "name": "Web technologies",
         "no_stars": true,
-        "animation_delay": 750,
-        "order": 9
+        "order": 10
     },
     {
         "name": "HTML",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/html_icon.png",
         "sub_lang": true,
-        "animation_delay": 800,
-        "order": 10
+        "order": 11
     },
     {
         "name": "Bootstrap",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/bootstrap_icon.png",
         "sub_lang": true,
-        "animation_delay": 850,
-        "order": 11
+        "order": 12
     },
     {
         "name": "CSS",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/css_icon.png",
         "sub_lang": true,
-        "animation_delay": 900,
-        "order": 12
+        "order": 13
     },
     {
         "name": "JavaScript",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/js_icon.png",
         "sub_lang": true,
-        "animation_delay": 950,
-        "order": 13
+        "order": 14
     }
 ]
