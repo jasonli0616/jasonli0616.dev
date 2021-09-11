@@ -62,14 +62,13 @@
 
     <div id="about"></div> <!-- This div is so the about button scrolls to the right position -->
     <div
-        data-aos="flip-up"
-        data-aos-duration="700"
+        data-aos="zoom-out-up"
         data-aos-anchor-placement="top-center"
     >
         <div class="intro-card about">
             <h1 id="about">About me</h1>
             <p>
-                I am a high school student in Canada. I am fluent in Python, Node.js, and Flask. I am currently learning Java for the <a href="https://en.wikipedia.org/wiki/FIRST_Robotics_Competition" target="_blank">FRC Robotics</a> team at my school. I am experienced in Flask for web backend development, as well as Express.js. I have participated in the <a href="https://dmz.ryerson.ca/canhack/" target="_blank">CanHack hackathon</a> run by Ryerson University and Carnegie Mellon University, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank">Cybersecurity award badge</a>. I have also participated in <a href="https://www.hackthefog.com" target="_blank">Hack The Cloud 2.0</a> hackathon, with my team earning <a href="https://certificate.hackthefog.com/?name=Jason%20Li&role=Sixth%20Place&type=HacktheCloud2&key=1594603192" target="_blank">6th place</a>.
+                Hi! I am a high school student in Canada. I am fluent in Python, Node.js, and I am currently learning Java. I am experienced in frameworks such as Flask and Express.js for backend web development. I have participated in numerous hackathons, including <a href="https://dmz.ryerson.ca/canhack/" target="_blank">CanHack hackathon</a>, <a href="https://www.hackthefog.com" target="_blank">Hack The Cloud</a>, <a href="https://ohacksio.org" target="_blank">OHacksIO</a>. These hackathons allow me to use and improve my skills in a competitive environment. The projects that my team and I have created are listed in the <a onclick="scrollToSection('projects')">projects</a> section below.
             </p>
 
             <br>
@@ -117,23 +116,18 @@
 
         {% for project in projects %}
             <div class="projects"
-                data-aos="zoom-out-up"
-                data-aos-delay="100"
-                data-aos-duration="700"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
             >
                 <h2>{{ project.name }}</h2>
-                <img src="{{ project.imageURL }}" alt="" style="max-height: 300px;"
-                    data-aos="fade-down"
-                    data-aos-delay="200"
-                    data-aos-duration="700"
-                >
+                <img src="{{ project.imageURL }}" alt="" style="max-height: 300px;">
                 <p>
                     {{ project.description }}
                     <br>
                     <span class="project-language">
                         {% if project.languages %}
-                        Made with:<br>
-                        {{ project.languages }}
+                            Made with:<br>
+                            {{ project.languages }}
                         {% endif %}
                     </span>
                 </p>
@@ -145,8 +139,8 @@
     </div>
 
     <div class="contact-div" id="contact"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
     >
         <form id="contact-form" method="POST">
             <h1>Contact</h1>

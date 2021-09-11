@@ -18,9 +18,10 @@
     background: rgba(177, 177, 177, 0.6);
     border: 1px solid black;
     margin: 1vw;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     padding-bottom: 20px;
+    position: relative;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
