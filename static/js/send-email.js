@@ -7,8 +7,8 @@ contact_form.addEventListener('keydown', (event) => {
 contact_form.addEventListener('submit', send_email);
 
 async function send_email(event) {
-    contact_button.innerHTML = "Sending email...";
     event.preventDefault();
+    sendEmailDots();
 
     const name = document.getElementById('contact-name').value;
     const email = document.getElementById('contact-email').value;
@@ -30,4 +30,21 @@ async function send_email(event) {
 
     contact_button.innerHTML = result['msg'];
     return false;
+}
+
+function sendEmailDots() {
+    contact_button.innerHTML = "Sending email.";
+    setInterval(() => {
+        switch (contact_button.innerHTML) {
+            case 'Sending email.':
+                contact_button.innerHTML = 'Sending email..';
+                break;
+            case 'Sending email..':
+                contact_button.innerHTML = 'Sending email...';
+                break;
+            case 'Sending email...':
+                contact_button.innerHTML = 'Sending email.';
+                break;
+        }
+    }, 500)
 }

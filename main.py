@@ -49,11 +49,8 @@ def send_email():
     if name == '':
         return_json['msg'] = 'Please enter your name.'
         sendEmail = False
-    elif email == '':
+    elif email == '' or not re.fullmatch(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email):
         return_json['msg'] = 'Please enter your email address.'
-        sendEmail = False
-    elif not re.fullmatch(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', email):
-        return_json['msg'] = 'Please enter a valid email address.'
         sendEmail = False
     elif message == '':
         return_json['msg'] = 'Please enter your message.'
@@ -73,7 +70,7 @@ def send_email():
 
                 smtp.sendmail(fromEmail, fromEmail, f'Subject: {msgsubject}\n\n{msgbody}')
             
-            return_json['msg'] = 'Message sent!'
+            return_json['msg'] = 'Email sent!'
         except:
             return_json['msg'] = 'An error occurred. Please try again.'
         
@@ -93,7 +90,7 @@ def shortcut(page):
     return redirect(url_for('index'))
 
 def main():
-    app.run(debug=True)
+    app.run('0.0.0.0', debug=True)
     #app.run(host='0.0.0.0', port=443)
 
 
