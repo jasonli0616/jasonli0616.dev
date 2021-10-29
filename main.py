@@ -1,5 +1,6 @@
 from flask import Flask, send_from_directory, request, jsonify, redirect
 import os
+import re
 import smtplib
 
 app = Flask(__name__, static_folder='frontend/build')
@@ -67,4 +68,4 @@ def send_email():
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', use_reloader=True, threaded=True)
+    app.run(use_reloader=True, threaded=True)
