@@ -16,6 +16,7 @@ class Project extends React.Component {
                     {/* Languages */}
                     {this.props.languages ? (
                         <span className="project-language">
+                            <br />
                             Made with:
                             <br/>
                             {this.props.languages}
