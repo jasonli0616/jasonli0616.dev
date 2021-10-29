@@ -1,20 +1,20 @@
-.contact-div {
+.contact {
     padding: 10vh;
     padding-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
-    .contact-div {
+    .contact {
         padding: 5vh 3vw;
     }
 }
 
-.contact-div h1 {
+.contact h1 {
     margin-bottom: 10px;
     text-align: start;
 }
 
-.contact-div form {
+.contact form {
     border-radius: 25px;
     background-color: rgba(3, 3, 3, 0.17);
     padding: 30px;
@@ -26,12 +26,12 @@
     transition: 0.3s;
 }
 
-.contact-div form label {
+.contact form label {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.contact-div form input[type=text], .contact-div form input[type=email], .contact-div form textarea {
+.contact form input[type=text], .contact form input[type=email], .contact form textarea {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     width: 100%;
     padding: 7px 15px;
@@ -45,18 +45,14 @@
     transition: 0.3s all;
 }
 
-.contact-div form button {
+.contact form button {
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
     margin-left: 0;
 }
 
-.contact-div form button:hover {
+.contact form button:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
-}
-
-span.required {
-    color: red;
 }

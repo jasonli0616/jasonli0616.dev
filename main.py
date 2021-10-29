@@ -1,37 +1,27 @@
-from flask import Flask, render_template, redirect, url_for, request, jsonify
-import smtplib
-import requests
-import re
+from flask import Flask, send_from_directory, request, jsonify, redirect
 import os
+import re
+import smtplib
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='frontend/build')
 
-def getLanguages():
-    '''Get languages as list'''
-    # Get JSON from GitHub
-    response = requests.get('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/languages.json')
-    # Sort by 'order' key
-    languages = sorted(list(response.json()), key=lambda k: k['order'])
-    # Put in animation delay
-    animation_delay = 300
-    for language in languages:
-        language['animation_delay'] = animation_delay
-        animation_delay += 50
-    return languages
+# Serve React App
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
-def getProjects():
-    '''Get projects as list'''
-    # Get JSON from GitHub
-    response = requests.get('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
-    # Sort by 'order' key
-    return sorted(list(response.json()), key=lambda k: k['order'], reverse=True)
 
-@app.route('/index.html/')
-@app.route('/')
-def index():
-    '''Homepage'''
-    return render_template('index.html', languages=getLanguages(), projects=getProjects())
+# GitHub repo redirect
+@app.route('/github/<repo>')
+def github(repo):
+    '''Redirect to GitHub repo'''
+    return redirect(f'https://github.com/jasonli0616/{repo}')
 
+# Send email
 @app.route('/send-email/', methods=['POST'])
 def send_email():
     '''Contact form'''
@@ -76,23 +66,6 @@ def send_email():
         
     return jsonify(return_json)
 
-@app.route('/github/<repo>')
-def github(repo):
-    '''Redirect to GitHub repo'''
-    return redirect(f'https://github.com/jasonli0616/{repo}')
-
-@app.route('/<page>/')
-def shortcut(page):
-    '''Shortcuts'''
-    if page == 'github': return redirect('https://github.com/jasonli0616')
-    elif page == 'devpost': return redirect('https://devpost.com/jasonli0616')
-    elif page == 'about' or page == 'projects' or page == 'contact': return redirect(f'/#{page}')
-    return redirect(url_for('index'))
-
-def main():
-    app.run('0.0.0.0', debug=True)
-    #app.run(host='0.0.0.0', port=443)
-
 
 if __name__ == '__main__':
-    main()
+    app.run(use_reloader=True, threaded=True)

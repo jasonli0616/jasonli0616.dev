@@ -1,0 +1,53 @@
+.about-card {
+    background: rgba(36, 36, 36, 0.829);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 70%;
+    min-width: 350px;
+    max-width: 1000px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+.about-card p {
+    margin: auto 20px;
+}
+
+.about-card .about-badge {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-card .about-badge img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    max-width: 95%;
+}
+
+.lang-list {
+    font-size: 20px;
+    margin-top: -30px;
+    line-height: 4vh;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+.sublang {
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .lang-list img {
+        width: 20px;
+    }
+}

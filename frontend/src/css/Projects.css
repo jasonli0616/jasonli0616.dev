@@ -1,9 +1,4 @@
-.projects-div {
-    display: flex;
-    justify-content: center;
-}
-
-.projects-wrapper {
+.projects {
     padding-bottom: 10vh;
     padding-top: 10px;
     display: flex;
@@ -11,55 +6,46 @@
     flex-wrap: wrap;
 }
 
-.projects {
+.project {
+    background: rgba(177, 177, 177, 0.6);
+    border: 1px solid black;
+    border-radius: 10px;
     width: 50vw;
     min-width: 300px;
     max-width: 450px;
-    background: rgba(177, 177, 177, 0.6);
-    border: 1px solid black;
-    margin: 1vw;
-    border-radius: 10px;
-    text-align: center;
-    padding-bottom: 20px;
-    position: relative;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    text-align: center;
+    margin: 1vw;
+    padding-bottom: 20px;
+    position: relative;
 }
 
 @media screen and (max-width: 800px) {
-    .projects {
+    .project {
         width: 40vh;
         display: block;
         margin: 1vh auto;
     }
 }
 
-.projects img {
+.project img {
     display: block;
     margin: auto;
     max-width: 90%;
 }
 
-.projects p {
+.project p {
     margin: auto 5px;
     height: fit-content;
     padding-bottom: 30px;
-}
-
-.projects p a {
-    color: aqua;
-    text-decoration: none;
-}
-
-.projects p a:hover {
-    text-decoration: underline;
 }
 
 span.project-language {
     font-size: 14px;
 }
 
-.projects .btn {
+.project .btn {
     position: absolute;
     bottom: 0;
     left: 0;
