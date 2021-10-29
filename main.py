@@ -1,12 +1,26 @@
-from flask import Flask, render_template, redirect, url_for, request, jsonify
-import smtplib
-import re
+from flask import Flask, send_from_directory, request, jsonify, redirect
 import os
+import smtplib
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='frontend/build')
+
+# Serve React App
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 
+# GitHub repo redirect
+@app.route('/github/<repo>')
+def github(repo):
+    '''Redirect to GitHub repo'''
+    return redirect(f'https://github.com/jasonli0616/{repo}')
 
+# Send email
 @app.route('/send-email/', methods=['POST'])
 def send_email():
     '''Contact form'''
@@ -51,10 +65,6 @@ def send_email():
         
     return jsonify(return_json)
 
-def main():
-    app.run('0.0.0.0', debug=True)
-    #app.run(host='0.0.0.0', port=443)
-
 
 if __name__ == '__main__':
-    main()
+    app.run('0.0.0.0', use_reloader=True, threaded=True)
