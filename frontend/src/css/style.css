@@ -1,7 +1,5 @@
 body {
     background: linear-gradient(to bottom left, rgb(17, 187, 255), rgb(66, 0, 153));
-    background-size: contain;
-    /* background-repeat: no-repeat; */
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     color: white;
     overflow-x: hidden;
