@@ -5,8 +5,7 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bscode_screenshot.png",
         "languages": "Python, Tkinter",
         "buttonURL": "https://github.com/jasonli0616/BSCode",
-        "buttonWebsiteName": "GitHub",
-        "order": 1
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "PyInstaller GUI",
@@ -14,8 +13,7 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/pyinstallergui_screenshot.png",
         "languages": "Python, Tkinter",
         "buttonURL": "https://github.com/jasonli0616/PyInstaller-GUI",
-        "buttonWebsiteName": "GitHub",
-        "order": 2
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "AnonPost",
@@ -23,8 +21,7 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/anonpost_screenshot.png",
         "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL, Node.js, Electron",
         "buttonURL": "https://github.com/jasonli0616/anon-post",
-        "buttonWebsiteName": "GitHub",
-        "order": 3
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "math.java",
@@ -32,8 +29,7 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/mathjava_screenshot.png",
         "languages": "Java",
         "buttonURL": "https://github.com/Tripleteam88/math.java",
-        "buttonWebsiteName": "GitHub",
-        "order": 4
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "Tutor Center",
@@ -41,16 +37,14 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/tutorcenter_screenshot.png",
         "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL",
         "buttonURL": "https://github.com/jasonli0616/HTC2021-404NotFound",
-        "buttonWebsiteName": "GitHub",
-        "order": 5
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "Jason VSCode Theme",
         "description": "This is a minimalistic VSCode theme that looks good, and doesn't distract you from your code. It is now available in dark, light, and even lighter for the people that like to burn their eyes.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jason-vscode-theme/main/images/theme_screenshot.png",
         "buttonURL": "https://marketplace.visualstudio.com/items?itemName=jasonli0616.jason-vscode-theme",
-        "buttonWebsiteName": "VSCode",
-        "order": 6
+        "buttonWebsiteName": "VSCode"
     },
     {
         "name": "PythonMySequel",
@@ -58,8 +52,7 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/pythonmysequel_screenshot.png",
         "languages": "Python, SQL",
         "buttonURL": "https://github.com/jasonli0616/PythonMySequel",
-        "buttonWebsiteName": "GitHub",
-        "order": 7
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "COV Ontario",
@@ -67,8 +60,7 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/cov-ontario_screenshot.png",
         "languages": "Python, Flask, HTTP requests, JavaScript, HTML, Bootstrap",
         "buttonURL": "https://github.com/jasonli0616/cov-ontario",
-        "buttonWebsiteName": "GitHub",
-        "order": 8
+        "buttonWebsiteName": "GitHub"
     },
     {
         "name": "Life Saver",
@@ -76,7 +68,6 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/lifesaver_screenshot.png",
         "languages": "Node.js, Express, JavaScript, EJS, Bootstrap",
         "buttonURL": "https://github.com/jasonli0616/OHacksIO-2021",
-        "buttonWebsiteName": "GitHub",
-        "order": 9
+        "buttonWebsiteName": "GitHub"
     }
 ]
