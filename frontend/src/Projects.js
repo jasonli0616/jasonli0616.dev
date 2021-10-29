@@ -5,11 +5,11 @@ import Button from "./Button";
 class Project extends React.Component {
     render() {
         return (
-            <div className="project">
+            <div className="project" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 {/* Title */}
                 <h2>{this.props.title}</h2>
                 {/* Image */}
-                <img src={this.props.image} alt="" style={{maxHeight: "300px"}} />
+                <img src={this.props.image} alt="" style={{maxHeight: "300px"}} data-aos="fade-up" data-aos-delay="200" />
                 {/* Description */}
                 <p>
                     {this.props.children}

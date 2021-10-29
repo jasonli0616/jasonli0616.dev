@@ -47,7 +47,7 @@ export default class About extends React.Component {
 
     render() {
         return (
-            <div className="about-card" id="about">
+            <div className="about-card" id="about" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
 
                 {/* About - intro */}
                 <h1>About me</h1>

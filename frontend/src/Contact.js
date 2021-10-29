@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contact" id="contact">
+            <div className="contact" id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <form method="POST" onSubmit={this.formSubmit}>
                     <h1>Contact</h1>
 
