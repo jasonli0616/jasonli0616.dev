@@ -2,7 +2,7 @@
     {
         "name": "BSCode",
         "description": "BSCode is a lightweight text editor for code. This is only a proof of concept application, and is not designed for practical use due to its bugginess.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/bscode_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bscode_screenshot.png",
         "languages": "Python, Tkinter",
         "buttonURL": "https://github.com/jasonli0616/BSCode",
         "buttonWebsiteName": "GitHub",
@@ -11,7 +11,7 @@
     {
         "name": "PyInstaller GUI",
         "description": "This is a GUI version of PyInstaller. Freeze your Python code into an executable applicataion without having to use the command line.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/pyinstallergui_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/pyinstallergui_screenshot.png",
         "languages": "Python, Tkinter",
         "buttonURL": "https://github.com/jasonli0616/PyInstaller-GUI",
         "buttonWebsiteName": "GitHub",
@@ -20,7 +20,7 @@
     {
         "name": "AnonPost",
         "description": "AnonPost is a concept social media platform based around anonymity. The user can use any username to sign up, and can create as many accounts as they want to remain anonymous.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/anonpost_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/anonpost_screenshot.png",
         "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL, Node.js, Electron",
         "buttonURL": "https://github.com/jasonli0616/anon-post",
         "buttonWebsiteName": "GitHub",
@@ -29,7 +29,7 @@
     {
         "name": "math.java",
         "description": "Math.java is a math package in Java with a focus on vectors, trigonometry, and linear equations. It is made by me and 2 other people at my school to learn Java for my school's robotics club.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/mathjava_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/mathjava_screenshot.png",
         "languages": "Java",
         "buttonURL": "https://github.com/Tripleteam88/math.java",
         "buttonWebsiteName": "GitHub",
@@ -38,7 +38,7 @@
     {
         "name": "Tutor Center",
         "description": "Tutor Center is a website to find freelance tutors and help their business. It is a project made for the Hack The Cloud 2.0 hackathon.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/tutorcenter_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/tutorcenter_screenshot.png",
         "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL",
         "buttonURL": "https://github.com/jasonli0616/HTC2021-404NotFound",
         "buttonWebsiteName": "GitHub",
@@ -55,7 +55,7 @@
     {
         "name": "PythonMySequel",
         "description": "PythonMySequel is an object oriented MySQL connector for Python. It is designed to be easy to use, with Python code instead of SQL.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/pythonmysequel_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/pythonmysequel_screenshot.png",
         "languages": "Python, SQL",
         "buttonURL": "https://github.com/jasonli0616/PythonMySequel",
         "buttonWebsiteName": "GitHub",
@@ -64,7 +64,7 @@
     {
         "name": "COV Ontario",
         "description": "COV Ontario is a website to see COVID-19 information in Ontario, while demonstrating the effectiveness of the COVID-19 vaccine.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/cov-ontario_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/cov-ontario_screenshot.png",
         "languages": "Python, Flask, HTTP requests, JavaScript, HTML, Bootstrap",
         "buttonURL": "https://github.com/jasonli0616/cov-ontario",
         "buttonWebsiteName": "GitHub",
@@ -73,7 +73,7 @@
     {
         "name": "Life Saver",
         "description": "Life Saver is a website that allows quick access to treatments for a variety of injuries and probable diagnoses based on symptoms.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/static/files/lifesaver_screenshot.png",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/lifesaver_screenshot.png",
         "languages": "Node.js, Express, JavaScript, EJS, Bootstrap",
         "buttonURL": "https://github.com/jasonli0616/OHacksIO-2021",
         "buttonWebsiteName": "GitHub",
