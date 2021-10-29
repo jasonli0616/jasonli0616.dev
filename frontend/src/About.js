@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/About.css';
 import { Star, StarFill } from 'react-bootstrap-icons';
+import Button from './Button';
 
 class Language extends React.Component {
     state = {
@@ -46,12 +47,12 @@ export default class About extends React.Component {
 
     render() {
         return (
-            <div className="about-card">
+            <div className="about-card" id="about">
 
                 {/* About - intro */}
                 <h1>About me</h1>
                 <p>
-                    Hi! I am a high school student in Canada. I am fluent in Python, Node.js, and I am currently learning Java. I am experienced in frameworks such as Flask and Express.js for backend web development. I have participated in numerous hackathons and competitions, including <a href="https://dmz.ryerson.ca/canhack/" target="_blank" rel="noreferrer">CanHack</a>, <a href="https://www.hackthefog.com/" target="_blank" rel="noreferrer">Hack The Cloud</a>, <a href="https://ohacksio.org/" target="_blank" rel="noreferrer">OHacksIO</a>, and <a href="https://hackthenorth.com" target="_blank" rel="noreferrer">Hack The North</a>. These hackathons allow me to use and improve my skills in a competitive environment. The projects that my team and I have created are listed in the projects section below.
+                    Hi! I am a high school student in Canada. I am fluent in Python, Node.js, and I am currently learning Java. I am experienced in frameworks such as Flask and Express.js for backend web development. I have participated in numerous hackathons and competitions, including <a href="https://dmz.ryerson.ca/canhack/" target="_blank" rel="noreferrer">CanHack</a>, <a href="https://www.hackthefog.com/" target="_blank" rel="noreferrer">Hack The Cloud</a>, <a href="https://ohacksio.org/" target="_blank" rel="noreferrer">OHacksIO</a>, and <a href="https://hackthenorth.com" target="_blank" rel="noreferrer">Hack The North</a>. These hackathons allow me to use and improve my skills in a competitive environment. The projects that my team and I have created are listed in the <Button scrollTo="projects" urlScroll={true}>projects</Button> section below.
                 </p>
 
                 {/* GitHub card */}

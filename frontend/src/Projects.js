@@ -48,7 +48,7 @@ export default class Projects extends React.Component {
     render() {
         return (
             <>
-            <h1>My Projects</h1>
+            <h1 id="projects">My Projects</h1>
             <div className="projects">
                 {this.state.projects ? (
                     this.state.projects.map((project =>

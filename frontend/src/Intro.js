@@ -5,6 +5,7 @@ import './css/Intro.css';
 import { Envelope, Github } from 'react-bootstrap-icons';
 
 export default class Intro extends React.Component {
+
     render() {
         return (
             <div className="intro-card">
@@ -16,8 +17,8 @@ export default class Intro extends React.Component {
                 
                 {/* Buttons */}
                 <div style={{display: "flex", justifyContent: "center"}}>
-                    <Button>About me</Button>
-                    <Button>Projects</Button>
+                    <Button scrollTo="about">About me</Button>
+                    <Button scrollTo="projects">Projects</Button>
                 </div>
 
                 {/* Icons */}
@@ -25,9 +26,9 @@ export default class Intro extends React.Component {
                     <a href="https://github.com/jasonli0616" target="_blank" rel="noreferrer">
                         <Github size={50} color="white" style={{margin: "10px 20px"}} />
                     </a>
-                    <a href="https://github.com/jasonli0616" target="_blank" rel="noreferrer">
+                    <Button scrollTo="contact" urlScroll={true}>
                         <Envelope size={50} color="white" style={{margin: "10px 20px"}} />
-                    </a>
+                    </Button>
                 </div>
 
             </div>

@@ -12,7 +12,7 @@ class Required extends React.Component {
 export default class Contact extends React.Component {
     render() {
         return (
-            <div className="contact">
+            <div className="contact" id="contact">
                 <form>
                     <h1>Contact</h1>
 
