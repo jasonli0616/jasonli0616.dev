@@ -1,21 +1,35 @@
-from flask import Flask, send_from_directory, request, jsonify, redirect
+from flask import Flask, send_from_directory, request, jsonify, redirect, url_for
 import os
 import re
 import smtplib
+
+
 
 app = Flask(__name__, static_folder='frontend/build')
 
 # Serve React App
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
-def serve(path):
-    if path != "" and os.path.exists(app.static_folder + '/' + path):
-        return send_from_directory(app.static_folder, path)
-    else:
+def index(path):
+    if path == "":
+        # Homepage
         return send_from_directory(app.static_folder, 'index.html')
+
+    elif path == "about" or path == "projects" or path == "contact":
+        # Section on page
+        return redirect(f"{url_for('index')}#{path}")
+
+    elif path != "" and os.path.exists(app.static_folder + '/' + path):
+        # Other existing path
+        return send_from_directory(app.static_folder, path)
+
+    else:
+        # Else redirect to homepage
+        return redirect(url_for('index'))
 
 
 # GitHub repo redirect
+@app.route('/github/', defaults={'repo': ''})
 @app.route('/github/<repo>')
 def github(repo):
     '''Redirect to GitHub repo'''
