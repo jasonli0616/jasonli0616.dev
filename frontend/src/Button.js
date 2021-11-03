@@ -3,11 +3,6 @@ import './css/Button.css'
 import { Link } from "react-scroll";
 
 export default class Button extends React.Component {
-    scrollToSection() {
-        // document.getElementById(scrollToID).scrollIntoView({ block: 'start',  behavior: 'smooth' });
-        // console.log(this.props.scrollTo);
-    }
-    
     render() {
         return (
             this.props.scrollTo ? (
