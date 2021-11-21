@@ -69,5 +69,13 @@
         "languages": "Node.js, Express, JavaScript, EJS, Bootstrap",
         "buttonURL": "https://github.com/jasonli0616/OHacksIO-2021",
         "buttonWebsiteName": "GitHub"
+    },
+    {
+        "name": "GWPC Scanner Check-in",
+        "description": "This is a barcode scanner program to ease the process of collecting contact tracing information before entering in-person school club meetings",
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/gwpcscannercheckin_screenshot.png",
+        "languages": "Python, SQLite, MongoDB",
+        "buttonURL": "https://github.com/HDSB-GWS-ProgrammingClub/gwpc-scanner-checkin",
+        "buttonWebsiteName": "GitHub"
     }
 ]
