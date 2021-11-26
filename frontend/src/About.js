@@ -58,7 +58,7 @@ export default class About extends React.Component {
                 {/* GitHub card */}
                 <div className="about-badge">
                     <a href="https://github.com/jasonli0616" target="_blank" rel="noreferrer">
-                        <img src="https://github-readme-stats.vercel.app/api?username=jasonli0616&theme=dark&show_icons=true" alt="GitHub stats" />
+                        <img src="https://github-readme-stats.vercel.app/api?username=jasonli0616&theme=dark&show_icons=true&count_private=true" alt="GitHub stats" />
                     </a>
                 </div>
 
