@@ -1,7 +1,7 @@
 import React from "react";
-import logo from './files/jl_logo.png';
+import logo from './../files/jl_logo.png';
 import Button from "./Button";
-import './css/Intro.css';
+import './../css/Intro.css';
 import { Envelope, Github } from 'react-bootstrap-icons';
 
 export default class Intro extends React.Component {

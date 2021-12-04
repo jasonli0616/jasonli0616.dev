@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/About.css';
+import './../css/About.css';
 import { Star, StarFill } from 'react-bootstrap-icons';
 import Button from './Button';
 
@@ -8,9 +8,12 @@ class Language extends React.Component {
         class: null
     }
 
-    render() {
+    componentDidMount() {
         if (!this.state.class && this.props.sublang)
             this.setState({class: "sublang"});
+    }
+
+    render() {
         return (
             <li className={this.state.class}>
                 {/* Image */}
@@ -20,11 +23,11 @@ class Language extends React.Component {
                 {/* Stars */}
                 {this.props.stars ? (
                     <>
-                        {Array.from(Array(this.props.stars), () => {
-                            return <StarFill />
+                        {Array.from(Array(this.props.stars).keys(), (key) => {
+                            return <StarFill key={key} />
                         })}
-                        {Array.from(Array(5 - this.props.stars), () => {
-                            return <Star />
+                        {Array.from(Array(5 - this.props.stars).keys(), (key) => {
+                            return <Star key={key} />
                         })}
                     </>
                 ) : (<></>)}
@@ -67,11 +70,11 @@ export default class About extends React.Component {
                 <div className="lang-list">
                     {this.state.languages ? (
                         <ul>
-                            {this.state.languages.map((language =>
-                                <Language img={language.imageURL} stars={language.stars} sublang={language.sub_lang}>
+                            {this.state.languages.map((language, key) =>
+                                <Language img={language.imageURL} stars={language.stars} sublang={language.sub_lang} key={key}>
                                     {language.name}
                                 </Language>
-                            ))}
+                            )}
                         </ul>
                     ) : (
                         <></>

@@ -1,5 +1,5 @@
 import React from "react";
-import './css/Projects.css'
+import './../css/Projects.css'
 import Button from "./Button";
 
 class Project extends React.Component {
@@ -52,11 +52,11 @@ export default class Projects extends React.Component {
             <h1 id="projects">My Projects</h1>
             <div className="projects">
                 {this.state.projects ? (
-                    this.state.projects.map((project =>
-                        <Project title={project.name} image={project.imageURL} languages={project.languages} url={project.buttonURL} website={project.buttonWebsiteName}>
+                    this.state.projects.map((project, key) =>
+                        <Project title={project.name} image={project.imageURL} languages={project.languages} url={project.buttonURL} website={project.buttonWebsiteName} key={key}>
                             {project.description}
                         </Project>
-                    ))
+                    )
                 ) : (
                     <></>
                 )}
