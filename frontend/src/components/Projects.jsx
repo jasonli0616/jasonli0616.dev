@@ -22,7 +22,7 @@ class Project extends React.Component {
                             {this.props.languages}
                         </span>
                     ) : (
-                        <></>
+                        null
                     )}
                 </p>
                 {/* Button */}
@@ -58,7 +58,7 @@ export default class Projects extends React.Component {
                         </Project>
                     )
                 ) : (
-                    <></>
+                    null
                 )}
             </div>
             </>
