@@ -30,7 +30,7 @@ def index(path):
 
 # GitHub repo redirect
 @app.route('/github/', defaults={'repo': ''})
-@app.route('/github/<repo>')
+@app.route('/github/<path:repo>')
 def github(repo):
     '''Redirect to GitHub repo'''
     return redirect(f'https://github.com/jasonli0616/{repo}')
