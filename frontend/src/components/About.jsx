@@ -5,33 +5,26 @@ import Button from './Button';
 
 class Language extends React.Component {
     state = {
-        class: null
-    }
-
-    componentDidMount() {
-        if (!this.state.class && this.props.sublang)
-            this.setState({class: "sublang"});
+        class: this.props.sublang ? "lang sublang" : "lang mainlang"
     }
 
     render() {
         return (
-            <li className={this.state.class}>
+            <div className={this.state.class}>
                 {/* Image */}
-                {this.props.img ? <img src={this.props.img} alt={this.props.children} width="30px" style={{verticalAlign: "middle", paddingRight: 10}} /> : <></> }
+                {this.props.img ? <img src={this.props.img} alt={this.props.children} /> : null }
                 {/* Name */}
-                {this.props.children + " "}
+                <p>{this.props.children}</p>
                 {/* Stars */}
-                {this.props.stars ? (
-                    <>
-                        {Array.from(Array(this.props.stars).keys(), (key) => {
-                            return <StarFill key={key} />
-                        })}
-                        {Array.from(Array(5 - this.props.stars).keys(), (key) => {
-                            return <Star key={key} />
-                        })}
-                    </>
-                ) : (<></>)}
-            </li>
+                <div className="stars">
+                    {Array.from(Array(this.props.stars).keys(), (key) => {
+                        return <StarFill key={key} />
+                    })}
+                    {Array.from(Array(5 - this.props.stars).keys(), (key) => {
+                        return <Star key={key} />
+                    })}
+                </div>
+            </div>
         )
     }
 }
@@ -69,15 +62,13 @@ export default class About extends React.Component {
                 <h2>Languages and Technologies</h2>
                 <div className="lang-list">
                     {this.state.languages ? (
-                        <ul>
-                            {this.state.languages.map((language, key) =>
-                                <Language img={language.imageURL} stars={language.stars} sublang={language.sub_lang} key={key}>
-                                    {language.name}
-                                </Language>
-                            )}
-                        </ul>
+                        this.state.languages.map((language, key) =>
+                            <Language img={language.imageURL} stars={language.stars} sublang={language.sub_lang} key={key}>
+                                {language.name}
+                            </Language>
+                        )
                     ) : (
-                        <></>
+                        null
                     )
                     
                     }

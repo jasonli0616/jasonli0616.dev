@@ -34,52 +34,38 @@
         "sub_lang": true
     },
     {
-        "name": "SQL",
-        "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/sql_icon.png"
-    },
-    {
         "name": "MongoDB",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/mongodb_icon.png"
     },
     {
-        "name": "Java",
-        "stars": 2,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/java_icon.png"
-    },
-    {
-        "name": "Web technologies",
-        "no_stars": true
-    },
-    {
-        "name": "HTML",
+        "name": "SQL",
         "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/html_icon.png",
-        "sub_lang": true
-    },
-    {
-        "name": "Bootstrap",
-        "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bootstrap_icon.png",
-        "sub_lang": true
-    },
-    {
-        "name": "CSS",
-        "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/css_icon.png",
-        "sub_lang": true
-    },
-    {
-        "name": "JavaScript",
-        "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/js_icon.png",
-        "sub_lang": true
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/sql_icon.png"
     },
     {
         "name": "React",
         "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/react_icon.png",
-        "sub_lang": true
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/react_icon.png"
+    },
+    {
+        "name": "HTML",
+        "stars": 3,
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/html_icon.png"
+    },
+    {
+        "name": "Bootstrap",
+        "stars": 3,
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bootstrap_icon.png"
+    },
+    {
+        "name": "CSS",
+        "stars": 3,
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/css_icon.png"
+    },
+    {
+        "name": "JavaScript",
+        "stars": 3,
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/js_icon.png"
     }
 ]
