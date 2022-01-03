@@ -6,7 +6,7 @@ import Button from './Button';
 
 function Project(props) {
     return (
-        <div className="project" data-aos="fade-up">
+        <div className="project" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
             {/* Title */}
             <h2>{props.title}</h2>
