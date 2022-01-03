@@ -1,5 +1,4 @@
 .contact {
-    padding: 20px 5vw;
     margin: 30px auto;
 }
 
@@ -10,8 +9,8 @@
 
 .contact form {
     border-radius: 25px;
-    padding: 30px;
-    padding-right: 60px;
+    padding: 40px;
+    padding-right: 70px;
     padding-top: 15px;
     display: flex;
     flex-direction: column;
@@ -31,7 +30,13 @@
     border-radius: 7px;
     margin-bottom: 15px;
     background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
     color: white;
+    transition: 0.3s box-shadow;
+}
+
+.contact form input[type=text]:hover, .contact form input[type=email]:hover, .contact form textarea:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 }
 
 .contact form button {

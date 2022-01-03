@@ -23,14 +23,12 @@ export default function Intro() {
             <div style={{ display: "flex", justifyContent: "center" }}>
 
                 <a href="https://github.com/jasonli0616" target="_blank" rel="noreferrer" data-aos="fade-up-right" data-aos-delay="1500">
-                    <Github size={50} color="white" style={{ margin: "10px 20px" }} />
+                    <Github size={50} color="white" className="icon-link" />
                 </a>
 
-                <div data-aos="fade-up-left" data-aos-delay="1700">
-                    <Button scrollTo="contact" urlScroll={true}>
-                        <Envelope size={50} color="white" style={{ margin: "10px 20px" }} />
-                    </Button>
-                </div>
+                <Button scrollTo="contact" urlScroll={true} data-aos="fade-up-left" data-aos-delay="1700">
+                    <Envelope size={50} color="white" className="icon-link" />
+                </Button>
 
             </div>
 
