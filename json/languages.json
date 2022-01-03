@@ -22,6 +22,12 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/nodejs_icon.png"
     },
     {
+        "name": "React",
+        "stars": 3,
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/react_icon.png",
+        "sub_lang": true
+    },
+    {
         "name": "Electron",
         "stars": 3,
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/electron_icon.png",
@@ -41,12 +47,8 @@
     {
         "name": "SQL",
         "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/sql_icon.png"
-    },
-    {
-        "name": "React",
-        "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/react_icon.png"
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/sql_icon.png",
+        "sub_lang": true
     },
     {
         "name": "HTML",
@@ -56,16 +58,19 @@
     {
         "name": "Bootstrap",
         "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bootstrap_icon.png"
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bootstrap_icon.png",
+        "sub_lang": true
     },
     {
         "name": "CSS",
         "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/css_icon.png"
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/css_icon.png",
+        "sub_lang": true
     },
     {
         "name": "JavaScript",
         "stars": 3,
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/js_icon.png"
+        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/js_icon.png",
+        "sub_lang": true
     }
 ]
