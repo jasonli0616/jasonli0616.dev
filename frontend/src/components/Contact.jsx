@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './../css/Contact.css';
 
 class Required extends React.Component {

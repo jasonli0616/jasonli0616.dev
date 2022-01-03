@@ -1,67 +1,61 @@
-import React from "react";
-import './../css/Projects.css'
-import Button from "./Button";
+import { useState } from 'react';
 
-class Project extends React.Component {
-    render() {
-        return (
-            <div className="project" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                {/* Title */}
-                <h2>{this.props.title}</h2>
-                {/* Image */}
-                <img src={this.props.image} alt="" style={{maxHeight: "300px"}} data-aos="fade-up" data-aos-delay="200" />
-                {/* Description */}
-                <p>
-                    {this.props.children}
-                    {/* Languages */}
-                    {this.props.languages ? (
-                        <span className="project-language">
-                            <br />
-                            Made with:
-                            <br/>
-                            {this.props.languages}
-                        </span>
-                    ) : (
-                        null
-                    )}
-                </p>
-                {/* Button */}
-                <Button href={this.props.url}>View on {this.props.website}</Button>
-                
-            </div>
-        )
-    }
-}
+import './../css/Projects.css';
 
-export default class Projects extends React.Component {
-    state = {
-        projects: null
-    }
+import Button from './Button';
 
-    async componentDidMount() {
-        // Get projects data
-        const response = await fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
-        const data = await response.json();
-        data.reverse();
-        this.setState({projects: data});
-    }
+function Project(props) {
+    return (
+        <div className="project" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
-    render() {
-        return (
-            <>
+            {/* Title */}
+            <h2>{props.title}</h2>
+
+            {/* Image */}
+            <img src={props.image} alt="" style={{maxHeight: "300px"}} data-aos="fade-up" data-aos-delay="200" />
+
+            {/* Description */}
+            <p>
+                {props.children}
+                {/* Languages */}
+                {props.languages ? (
+                    <span className="project-language">
+                        <br />
+                        Made with:
+                        <br/>
+                        {props.languages}
+                    </span>
+                ) : null}
+            </p>
+
+            {/* Button */}
+            <Button href={props.url}>View on {props.website}</Button>
+            
+        </div>
+    );
+};
+
+export default function Projects() {
+
+    const [projects, setProjects] = useState(null)
+
+    fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
+        .then(response => response.json())
+        .then(data => setProjects(data));
+
+    return (
+        <>
             <h1 id="projects">My Projects</h1>
+
             <div className="projects">
-                {this.state.projects ? (
-                    this.state.projects.map((project, key) =>
-                        <Project title={project.name} image={project.imageURL} languages={project.languages} url={project.buttonURL} website={project.buttonWebsiteName} key={key}>
-                            {project.description}
-                        </Project>
-                    )
-                ) : (
-                    null
-                )}
+
+                {projects ? ( projects.map((project, key) =>
+                    <Project title={project.name} image={project.imageURL} languages={project.languages} url={project.buttonURL} website={project.buttonWebsiteName} key={key}>
+                        {project.description}
+                    </Project>
+                )) : null}
+
             </div>
-            </>
-        )
-    }
-}
+        </>
+    );
+};
