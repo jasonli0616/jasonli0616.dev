@@ -63,8 +63,7 @@ def send_email():
     # Send email
     if sendEmail:
         try:
-            with smtplib.SMTP(os.getenv('SERVER'), int(os.getenv('PORT'))) as smtp:
-                smtp.starttls()
+            with smtplib.SMTP_SSL(os.getenv('SERVER'), int(os.getenv('PORT'))) as smtp:
                 fromEmail = os.getenv('EMAIL_ADDR')
                 fromPassword = os.getenv('EMAIL_PW')
                 smtp.login(fromEmail, fromPassword)
