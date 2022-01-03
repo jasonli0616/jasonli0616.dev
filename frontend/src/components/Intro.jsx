@@ -6,7 +6,7 @@ import { Envelope, Github } from 'react-bootstrap-icons';
 
 export default function Intro() {
     return (
-        <div className="intro-card" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
+        <div className="card intro-card" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
 
             {/* Main intro */}
             <img src={logo} className="logo" alt="JL" data-aos="fade-down" data-aos-delay="700" />

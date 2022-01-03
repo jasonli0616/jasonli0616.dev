@@ -6,7 +6,7 @@ import Button from './Button';
 
 function Project(props) {
     return (
-        <div className="project" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div className="project" data-aos="fade-up">
 
             {/* Title */}
             <h2>{props.title}</h2>
@@ -37,15 +37,15 @@ function Project(props) {
 
 export default function Projects() {
 
-    const [projects, setProjects] = useState(null)
+    const [projects, setProjects] = useState(null);
 
     fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
         .then(response => response.json())
         .then(data => setProjects(data));
 
     return (
-        <>
-            <h1 id="projects">My Projects</h1>
+        <div className="card" id="projects">
+            <h1>My Projects</h1>
 
             <div className="projects">
 
@@ -56,6 +56,6 @@ export default function Projects() {
                 )) : null}
 
             </div>
-        </>
+        </div>
     );
 };

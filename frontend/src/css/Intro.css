@@ -1,21 +1,10 @@
 .intro-card {
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 60px;
     display: flex;
     flex-direction: column;
-    margin: auto;
     margin-top: 4%;
-    width: 70%;
-    min-width: 350px;
-    max-width: 1000px;
     height: 400px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
-/* 
-.intro-card:hover {
-    box-shadow: 0 0 32px rgba(0, 0, 0, 0.4);
-} */
 
 .logo {
     height: 100px;

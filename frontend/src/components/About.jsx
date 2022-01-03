@@ -27,14 +27,14 @@ function Language(props) {
 
 export default function About(props) {
 
-    const [languages, setLanguages] = useState(null)
+    const [languages, setLanguages] = useState(null);
 
     fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/languages.json')
         .then(response => response.json())
         .then(data => setLanguages(data));
 
     return (
-        <div className="about-card" id="about" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+        <div className="card about-card" id="about" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
 
             {/* About - intro */}
             <h1>About me</h1>

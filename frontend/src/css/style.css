@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom left, rgb(17, 187, 255), rgb(66, 0, 153));
+    background: linear-gradient(to bottom left, rgb(17, 187, 255), rgb(81, 0, 187));
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     color: white;
     overflow-x: hidden;
@@ -45,4 +45,14 @@ a:hover {
     p {
         font-size: 16px;
     }
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    width: 70%;
+    min-width: 350px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
