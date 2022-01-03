@@ -12,7 +12,7 @@ function Project(props) {
             <h2>{props.title}</h2>
 
             {/* Image */}
-            <img src={props.image} alt="" style={{maxHeight: "300px"}} data-aos="fade-up" data-aos-delay="200" />
+            <img src={props.image} alt="" style={{ maxHeight: "300px" }} data-aos="fade-up" data-aos-delay="200" />
 
             {/* Description */}
             <p>
@@ -22,7 +22,7 @@ function Project(props) {
                     <span className="project-language">
                         <br />
                         Made with:
-                        <br/>
+                        <br />
                         {props.languages}
                     </span>
                 ) : null}
@@ -30,7 +30,7 @@ function Project(props) {
 
             {/* Button */}
             <Button href={props.url}>View on {props.website}</Button>
-            
+
         </div>
     );
 };
@@ -49,7 +49,7 @@ export default function Projects() {
 
             <div className="projects">
 
-                {projects ? ( projects.map((project, key) =>
+                {projects ? (projects.map((project, key) =>
                     <Project title={project.name} image={project.imageURL} languages={project.languages} url={project.buttonURL} website={project.buttonWebsiteName} key={key}>
                         {project.description}
                     </Project>

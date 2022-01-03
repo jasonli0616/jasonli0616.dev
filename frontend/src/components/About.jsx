@@ -9,7 +9,7 @@ function Language(props) {
     return (
         <div className={props.sublang ? "lang sublang" : "lang mainlang"}>
             {/* Image */}
-            {props.img ? <img src={props.img} alt={props.children} /> : null }
+            {props.img ? <img src={props.img} alt={props.children} /> : null}
             {/* Name */}
             <p>{props.children}</p>
             {/* Stars */}
