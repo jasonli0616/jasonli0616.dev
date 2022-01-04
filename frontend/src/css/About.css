@@ -36,10 +36,15 @@
     margin-top: -30px;
     width: 40%;
     min-width: fit-content;
+    max-width: 100%;
 }
 
 .lang-list .mainlang {
     padding-top: 15px;
+}
+
+.lang-list .mainlang, .lang-list .sublang {
+    height: 40px;
 }
 
 .lang-list p {
