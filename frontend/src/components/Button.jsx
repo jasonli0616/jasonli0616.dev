@@ -10,7 +10,7 @@ export default function Button(props) {
         if (props.urlScroll) {
             // If URL scroll
             return (
-                <Link to={props.scrollTo} smooth={true} value={props.children} style={{ cursor: "pointer" }} data-aos={props['data-aos']} data-aos-delay={props['data-aos-delay']}>
+                <Link to={props.scrollTo} smooth={true} style={{ cursor: "pointer" }} data-aos={props['data-aos']} data-aos-delay={props['data-aos-delay']}>
                     {props.children}
                 </Link>
             );
@@ -18,7 +18,7 @@ export default function Button(props) {
         } else {
             return (
                 // If button scroll
-                <Link className="btn" to={props.scrollTo} smooth={true} value={props.children}>
+                <Link className="btn" to={props.scrollTo} smooth={true}>
                     {props.children}
                 </Link>
             );
