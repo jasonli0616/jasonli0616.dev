@@ -41,7 +41,7 @@ export default function Projects() {
 
     fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
         .then(response => response.json())
-        .then(data => setProjects(data));
+        .then(data => setProjects(data.reverse()));
 
     return (
         <div className="card" id="projects">
