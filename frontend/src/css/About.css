@@ -43,8 +43,8 @@
     padding-top: 15px;
 }
 
-.lang-list .mainlang, .lang-list .sublang {
-    height: 40px;
+.lang-list .sublang {
+    padding-top: 5px 0;
 }
 
 .lang-list p {
