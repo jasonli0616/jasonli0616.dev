@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './../css/Projects.css';
 
@@ -39,9 +39,11 @@ export default function Projects() {
 
     const [projects, setProjects] = useState(null);
 
-    fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
-        .then(response => response.json())
-        .then(data => setProjects(data.reverse()));
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/projects.json')
+            .then(response => response.json())
+            .then(data => setProjects(data.reverse()));
+    }, [])
 
     return (
         <div className="card" id="projects">

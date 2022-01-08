@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './../css/About.css';
 
@@ -29,9 +29,11 @@ export default function About(props) {
 
     const [languages, setLanguages] = useState(null);
 
-    fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/languages.json')
-        .then(response => response.json())
-        .then(data => setLanguages(data));
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/json/languages.json')
+            .then(response => response.json())
+            .then(data => setLanguages(data));
+    }, [])
 
     return (
         <div className="card about-card" id="about" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
