@@ -1,6 +1,5 @@
 import './../css/Intro.css';
 
-import logo from './../files/jl_logo.png';
 import Button from "./Button";
 import { Envelope, Github } from 'react-bootstrap-icons';
 
@@ -9,7 +8,7 @@ export default function Intro() {
         <div className="card intro-card" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
 
             {/* Main intro */}
-            <img src={logo} className="logo" alt="JL" data-aos="fade-down" data-aos-delay="700" />
+            <img src="https://github.com/jasonli0616/jasonli0616.dev/blob/main/img/jl_logo.png?raw=true" className="logo" alt="JL" data-aos="fade-down" data-aos-delay="700" />
             <h1 data-aos="fade-down" data-aos-delay="900">Jason Li</h1>
             <h2 style={{ marginTop: "5px" }} data-aos="fade-down" data-aos-delay="1100">High school student</h2>
 
