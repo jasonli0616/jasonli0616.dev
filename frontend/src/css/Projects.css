@@ -1,5 +1,9 @@
+#projects {
+    text-align: center;
+}
+
 .projects {
-    padding-bottom: 10vh;
+    padding-bottom: 1vh;
     padding-top: 10px;
     display: flex;
     justify-content: center;

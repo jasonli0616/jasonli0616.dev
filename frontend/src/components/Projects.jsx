@@ -56,7 +56,9 @@ export default function Projects() {
                         {project.description}
                     </Project>
                 )) : null}
-
+            </div>
+            <div style={{paddingBottom: '3vh'}}>
+                <Button href="https://github.com/jasonli0616?tab=repositories">See more projects</Button>
             </div>
         </div>
     );

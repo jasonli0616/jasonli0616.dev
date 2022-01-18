@@ -27,7 +27,7 @@ export default function Button(props) {
     } else {
         return (
             // Normal button
-            <a className="btn" href={props.href} target="_blank" rel="noreferrer" onClick={props.onclick}>
+            <a className="btn" href={props.href} target="_blank" rel="noreferrer" onClick={props.onclick} style={props.style}>
                 {props.children}
             </a>
         );
