@@ -1,29 +1,5 @@
 [
     {
-        "name": "BSCode",
-        "description": "BSCode is a lightweight text editor for code. This is only a proof of concept application, and is not designed for practical use due to its bugginess.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/bscode_screenshot.png",
-        "languages": "Python, Tkinter",
-        "buttonURL": "https://github.com/jasonli0616/BSCode",
-        "buttonWebsiteName": "GitHub"
-    },
-    {
-        "name": "PyInstaller GUI",
-        "description": "This is a GUI version of PyInstaller. Freeze your Python code into an executable applicataion without having to use the command line.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/pyinstallergui_screenshot.png",
-        "languages": "Python, Tkinter",
-        "buttonURL": "https://github.com/jasonli0616/PyInstaller-GUI",
-        "buttonWebsiteName": "GitHub"
-    },
-    {
-        "name": "AnonPost",
-        "description": "AnonPost is a concept social media platform based around anonymity. The user can use any username to sign up, and can create as many accounts as they want to remain anonymous.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/anonpost_screenshot.png",
-        "languages": "Python, Flask, HTML, CSS, JavaScript, Bootstrap, SQL, Node.js, Electron",
-        "buttonURL": "https://github.com/jasonli0616/anon-post",
-        "buttonWebsiteName": "GitHub"
-    },
-    {
         "name": "math.java",
         "description": "Math.java is a math package in Java with a focus on vectors, trigonometry, and linear equations. It is made by me and 2 other people at my school to learn Java for my school's robotics club.",
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/mathjava_screenshot.png",
@@ -52,14 +28,6 @@
         "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/pythonmysequel_screenshot.png",
         "languages": "Python, SQL",
         "buttonURL": "https://github.com/jasonli0616/PythonMySequel",
-        "buttonWebsiteName": "GitHub"
-    },
-    {
-        "name": "COV Ontario",
-        "description": "COV Ontario is a website to see COVID-19 information in Ontario, while demonstrating the effectiveness of the COVID-19 vaccine.",
-        "imageURL": "https://raw.githubusercontent.com/jasonli0616/jasonli0616.dev/main/img/cov-ontario_screenshot.png",
-        "languages": "Python, Flask, HTTP requests, JavaScript, HTML, Bootstrap",
-        "buttonURL": "https://github.com/jasonli0616/cov-ontario",
         "buttonWebsiteName": "GitHub"
     },
     {
