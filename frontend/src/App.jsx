@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './css/style.css';
+import './style.css';
 
-import Intro from './components/Intro';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Intro from './components/Intro/Intro';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

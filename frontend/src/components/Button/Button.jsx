@@ -1,4 +1,4 @@
-import './../css/Button.css'
+import styles from './Button.module.css'
 
 import { Link } from 'react-scroll';
 
@@ -18,7 +18,7 @@ export default function Button(props) {
         } else {
             return (
                 // If button scroll
-                <Link className="btn" to={props.scrollTo} smooth={true}>
+                <Link className={styles.btn} to={props.scrollTo} smooth={true}>
                     {props.children}
                 </Link>
             );
@@ -27,7 +27,7 @@ export default function Button(props) {
     } else {
         return (
             // Normal button
-            <a className="btn" href={props.href} target="_blank" rel="noreferrer" onClick={props.onclick} style={props.style}>
+            <a className={styles.btn} href={props.href} target="_blank" rel="noreferrer" onClick={props.onclick} style={props.style}>
                 {props.children}
             </a>
         );

@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
 
-import './../css/About.css';
+import styles from './About.module.css';
 
-import Button from './Button';
+import Button from './../Button/Button';
 import { Star, StarFill } from 'react-bootstrap-icons';
 
 function Language(props) {
     return (
-        <div className={props.sublang ? "lang sublang" : "lang mainlang"}>
+        <div className={`${styles.lang} ${props.sublang ? styles.sublang : styles.mainlang}`}>
             {/* Image */}
             {props.img ? <img src={props.img} alt={props.children} /> : null}
             {/* Name */}
             <p>{props.children}</p>
             {/* Stars */}
-            <div className="stars">
+            <div className={styles.stars}>
                 {Array.from(Array(props.stars).keys(), (key) => {
                     return <StarFill key={key} />
                 })}
@@ -36,7 +36,7 @@ export default function About(props) {
     }, [])
 
     return (
-        <div className="card about-card" id="about" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
+        <div className={`card ${styles.aboutCard}`} id="about" data-aos="zoom-out-up" data-aos-anchor-placement="top-center">
 
             {/* About - intro */}
             <h1>About me</h1>
@@ -45,7 +45,7 @@ export default function About(props) {
             </p>
 
             {/* GitHub card */}
-            <div className="about-badge">
+            <div className={styles.aboutBadge}>
                 <a href="https://github.com/jasonli0616" target="_blank" rel="noreferrer">
                     <img src="https://github-readme-stats.vercel.app/api?username=jasonli0616&theme=dark&show_icons=true&count_private=true" alt="GitHub stats" />
                 </a>
@@ -53,7 +53,7 @@ export default function About(props) {
 
             {/* Languages */}
             <h2>Languages and Technologies</h2>
-            <div className="lang-list">
+            <div className={styles.langList}>
                 {languages ? languages.map((language, key) =>
                     <Language img={language.imageURL} stars={language.stars} sublang={language.sub_lang} key={key}>
                         {language.name}

@@ -1,4 +1,4 @@
-import './../css/Contact.css';
+import styles from './Contact.module.css';
 
 function Required() {
     return (
@@ -34,7 +34,7 @@ async function formSubmit(event) {
 
 export default function Contact() {
     return (
-        <div className="card contact" id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div className={`card ${styles.contact}`} id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <form method="POST" onSubmit={formSubmit}>
                 <h1>Contact</h1>
 

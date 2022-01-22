@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-import './../css/Projects.css';
+import styles from './Projects.module.css';
 
-import Button from './Button';
+import Button from './../Button/Button';
 
 function Project(props) {
     return (
-        <div className="project" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div className={styles.project} data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
             {/* Title */}
             <h2>{props.title}</h2>
@@ -19,7 +19,7 @@ function Project(props) {
                 {props.children}
                 {/* Languages */}
                 {props.languages ? (
-                    <span className="project-language">
+                    <span className={styles.projectLanguage}>
                         <br />
                         Made with:
                         <br />
@@ -46,10 +46,10 @@ export default function Projects() {
     }, [])
 
     return (
-        <div className="card" id="projects">
+        <div className={`card`} id="projects" style={{ textAlign: 'center' }}>
             <h1>My Projects</h1>
 
-            <div className="projects">
+            <div className={styles.projects}>
 
                 {projects ? (projects.map((project, key) =>
                     <Project title={project.name} image={project.imageURL} languages={project.languages} url={project.buttonURL} website={project.buttonWebsiteName} key={key}>
@@ -57,7 +57,7 @@ export default function Projects() {
                     </Project>
                 )) : null}
             </div>
-            <div style={{paddingBottom: '3vh'}}>
+            <div style={{ paddingBottom: '3vh' }}>
                 <Button href="https://github.com/jasonli0616?tab=repositories">See more projects</Button>
             </div>
         </div>
